@@ -1,232 +1,269 @@
      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+     * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+     }
 
-        body {
-            margin: auto;
-            font-family: 'Open Sans', sans-serif;
-        }
+     body {
+         margin: auto;
+         font-family: 'Open Sans', sans-serif;
+     }
 
-        h1,
-        h2,
-        h3 {
-            font-family: 'Poppins', sans-serif;
-        }
+     h1,
+     h2,
+     h3 {
+         font-family: 'Poppins', sans-serif;
+     }
 
-        header {
-            background-image: url('images/bg-hero-desktop.svg');
-            padding: 5%;
-            display: grid;
-            grid-template-areas:
-                'a b'
-                'c d';
-            gap: 50px;
-        }
+     header {
+         background-image: url('images/bg-hero-desktop.svg');
+         padding: 5%;
+         display: grid;
+         grid-template-areas:
+             'a b'
+             'c d';
+         gap: 50px;
+     }
 
-        .hdivA {
-            grid-area: a;
-        }
+     .hdivA {
+         grid-area: a;
+     }
 
-        .hdivB {
-            grid-area: b;
-            position: relative;
-            right: 0px;
-        }
+     .hdivB {
+         grid-area: b;
+         position: relative;
+         right: 0px;
+     }
 
-        .hdivC {
-            grid-area: c;
-            text-align: left;
-        }
-        .hdivC h1 {
-            margin-bottom: 20px;
-        }
+     .hdivC {
+         grid-area: c;
+         text-align: left;
+     }
 
-        .hdivD {
-            grid-area: d;
-        }
+     .hdivC h1 {
+         margin-bottom: 20px;
+     }
 
-        #image-1 {
-            height: 100%;
-            width: 100%;
-        }
+     .hdivD {
+         grid-area: d;
+     }
 
-        .image-2 {
-            width: 70%;
-        }
+     #image-1 {
+         height: 100%;
+         width: 100%;
+     }
 
-        #container2{
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-            width: 100%;
-            padding: 5%;
-            column-gap: 20px;
-          text-align: left;
-        }
-              main p{
-      color: hsl(208, 11%, 55%);
-        }
-      main h{
-       margin: 5px;
-      }
+     .image-2 {
+         width: 70%;
+     }
+
+     #container2 {
+         display: flex;
+         flex-direction: column;
+         margin: auto;
+         width: 100%;
+         padding: 5%;
+         column-gap: 20px;
+         text-align: left;
+     }
+
+     main p {
+         color: hsl(208, 11%, 55%);
+     }
+
+     main h {
+         margin: 5px;
+     }
 
 
-        .rowA{
-            display: grid;
-            grid-template-areas:
-                'aaa bbb'
-            ;
-            border-radius: 20px;
-            box-shadow: 0px 2px 10px 0px rgb(61, 6, 6);
-            margin: 2%;
-            padding: 4%;
-        }
-        .rowB{
-            display: grid;
-            grid-template-areas:                
-               'ccc ddd'                
-            ;
-            border-radius: 20px;
-            box-shadow: 0px 2px 10px 0px rgb(61, 6, 6);
-            padding: 4%;
-            margin: 2%;
-        }
-        .rowC{
-            display: grid;
-            grid-template-areas:
-            'eee fff';
-            margin: auto;
-            border-radius: 20px;
-            box-shadow: 0px 2px 10px 0px rgb(61, 6, 6);
-            margin: 2%;
-            padding: 4%;
-        }
-        .boxA {   padding:2px;
-margin:2%;
-            grid-area: aaa;
-        }
+     .rowA {
+         display: grid;
+         grid-template-areas:
+             'aaa bbb'
+         ;
+         border-radius: 20px;
+         box-shadow: 0px 2px 10px 0px hsl(208, 11%, 55%);
+         margin: 2%;
+         padding: 4%;
+         position: relative;
+         animation-name: example;
+         animation-duration: 1.5s;
+     }
 
-        .boxB {
-            grid-area: bbb;
-               padding:2px;
-margin:2%;
+     @keyframes example {
+         0% {
+             left: 300px;
+             top: 0px;
+         }
+        
+        100% {
+            left: 0px;
+            top: 0px;
         }
+     }
 
-        .boxC {
-            grid-area: ccc;
-               padding:2px;
-margin:2%;
-        }
+     .rowB {
+         display: grid;
+         grid-template-areas:
+             'ccc ddd'
+         ;
+         border-radius: 20px;
+         box-shadow: 0px 2px 10px 0px hsl(208, 11%, 55%);
+         padding: 4%;
+         margin: 2%;
+         position: relative;
+         animation-name: example;
+         animation-duration: 2s;
+     }
 
-        .boxD {
-            grid-area: ddd;
-               padding:2px;
-margin:2%;
-        }
-        .boxE {
-            grid-area: eee;  
-               padding:2px;
-margin:2%;         
-        }
-       .boxF {
-            grid-area: fff;
-               padding:2px;
-margin:2%;
-        }
+     .rowC {
+         display: grid;
+         grid-template-areas:
+             'eee fff';
+         margin: auto;
+         border-radius: 20px;
+         box-shadow: 0px 2px 10px 0px hsl(208, 11%, 55%);
+         margin: 2%;
+         padding: 4%;
+         position: relative;
+         animation-name: example;
+         animation-duration: 2.5s;
+     }
 
-        footer {
-            padding: 10%;
-            background-color: hsl(192, 100%, 9%);
-            color: white;
-            bottom: 0;
-            width: 100%;
-        }
+     .boxA {
+         padding: 2px;
+         margin: 2%;
+         grid-area: aaa;
+     }
 
-        #container3 {
-            display: grid;
-            grid-template-areas:
-                'a b c d'
-            ;
-            margin: auto;
-            gap: 30px;
-            position: relative;
-            top: 1em;
-            bottom: 1em;
-        }
+     .boxB {
+         grid-area: bbb;
+         padding: 2px;
+         margin: 2%;
+     }
 
-        .d1 {
-            grid-area: a;
-            width: 90%;
-        }
+     .boxC {
+         grid-area: ccc;
+         padding: 2px;
+         margin: 2%;
+     }
 
-        .d2 {
-            grid-area: b;
-        }
+     .boxD {
+         grid-area: ddd;
+         padding: 2px;
+         margin: 2%;
+     }
 
-        .d3 {
-            grid-area: c;
-        }
+     .boxE {
+         grid-area: eee;
+         padding: 2px;
+         margin: 2%;
+     }
 
-        .d4 {
-            grid-area: d;
-        }
-        .d5 {
-            position: relative;
-            top: 15%;
-        }
+     .boxF {
+         grid-area: fff;
+         padding: 2px;
+         margin: 2%;
+     }
 
-        .d4 img {
-            height: 20px;
-        }
+     footer {
+         padding: 10%;
+         background-color: hsl(192, 100%, 9%);
+         color: white;
+         bottom: 0;
+         width: 100%;
+     }
 
-        .d4 img:hover {
-            background-color: pink;
-        }
+     #container3 {
+         display: grid;
+         grid-template-areas:
+             'a b c d'
+         ;
+         margin: auto;
+         gap: 30px;
+         position: relative;
+         top: 1em;
+         bottom: 1em;
+     }
 
-        .pink-bttn {
-            background-color: hsl(322, 100%, 66%);
-            border-color: hsl(322, 100%, 66%);
-            border-radius: 40px;
-            padding: 20px;
-            color: white;
-            margin-top: 20px;
-            width:100%;
-        }
+     .d1 {
+         grid-area: a;
+         width: 90%;
+     }
 
-        .white-bttn {
-            background-color: white;
-            border-radius: 50px;
-            padding: 20px;
-            color: hsl(192, 100%, 9%);
-        }
+     .d2 {
+         grid-area: b;
+     }
 
-        .mid-Div{
-            height: 200px;            
-            width: 60%;
-            margin: auto;
-            border-radius: 12px;
-            position: relative;
-            bottom: -60px;
-            text-align: center;
-            background-color: white;
-            box-shadow: 0px 2px 10px 0px hsl(208, 11%, 55%);
-            padding: 5%;
-        }
-        a{
-            color:white;            
-            text-decoration: none;
-        }
-        a:hover{
-            color:white;
-            text-decoration: underline;
-            background: none;
-        }
-        .pink-bttn:hover{
-            background-color:lightpink;
-            border-color: lightpink;
-        }
+     .d3 {
+         grid-area: c;
+     }
+
+     .d4 {
+         grid-area: d;
+     }
+
+     .d5 {
+         position: relative;
+         top: 15%;
+     }
+
+     .d4 img {
+         height: 20px;
+     }
+
+     .d4 img:hover {
+         background-color: pink;
+     }
+
+     .pink-bttn {
+         background-color: hsl(322, 100%, 66%);
+         border-color: hsl(322, 100%, 66%);
+         border-radius: 40px;
+         padding: 20px;
+         color: white;
+         margin-top: 20px;
+         width: 100%;
+     }
+
+     .white-bttn {
+         background-color: white;         
+         border: white solid;         
+         box-shadow: 0px 2px 10px 0px hsl(208, 11%, 70%);
+         border-radius: 50px;
+         padding: 20px;
+         color: hsl(192, 100%, 9%);
+         width: 100%;
+     }
+
+     .mid-Div {
+         height: 200px;
+         width: 60%;
+         margin: auto;
+         border-radius: 12px;
+         position: relative;
+         bottom: -60px;
+         text-align: center;
+         background-color: white;
+         box-shadow: 0px 2px 10px 0px hsl(208, 11%, 55%);
+         padding: 3%;
+     }
+
+     a {
+         color: white;
+         text-decoration: none;
+     }
+
+     a:hover {
+         color: white;
+         text-decoration: underline;
+         background: none;
+     }
+
+     .pink-bttn:hover {
+         background-color: lightpink;
+         border-color: lightpink;
+     }
